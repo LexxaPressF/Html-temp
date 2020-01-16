@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" type="text/css" href="{% static 'Styles/styles.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Вход {% endblock %}</title>
+</head>
+<body>
+<center>
+    <header><h1>Вход</h1></header>
+    <form action="" method="GET">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br><input type="submit" value="Войти"/></br>
+    </form>
+</center>
+</body>
+</html>

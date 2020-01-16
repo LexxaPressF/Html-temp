@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>
+Авторизация
+</title>
+</head>
+<link href="style.css" type="text/css" rel="stylesheet">
+<header>
+<img src="porthub.png">
+<h1> Авторизация: </h1>
+</header>
+<body>
+ <form action="" method="GET">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br><input type="submit" value="Войти"/></br>
+    </form>
+</body>
+</html>
