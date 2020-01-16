@@ -26,8 +26,8 @@ input {
 	width:700px;
 	height: 200px;
 }
-.list{
-	font-size: 150%;
-	width:20%;
+.image1{
+	transform: rotate(-45deg);
+	width: 200px;
 	text-align: left;
 }
